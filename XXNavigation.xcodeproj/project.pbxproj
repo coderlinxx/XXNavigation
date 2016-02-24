@@ -13,6 +13,8 @@
 		C44188421C7D659E00199CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44188401C7D659E00199CDF /* Main.storyboard */; };
 		C44188441C7D659E00199CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44188431C7D659E00199CDF /* Assets.xcassets */; };
 		C44188471C7D659E00199CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44188451C7D659E00199CDF /* LaunchScreen.storyboard */; };
+		C44188591C7D7C9300199CDF /* NormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44188561C7D7C9300199CDF /* NormalController.m */; };
+		C441885A1C7D7C9300199CDF /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44188581C7D7C9300199CDF /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		C44188431C7D659E00199CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44188461C7D659E00199CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44188481C7D659E00199CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44188551C7D7C9300199CDF /* NormalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalController.h; sourceTree = "<group>"; };
+		C44188561C7D7C9300199CDF /* NormalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalController.m; sourceTree = "<group>"; };
+		C44188571C7D7C9300199CDF /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C44188581C7D7C9300199CDF /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,11 @@
 		C44188361C7D659E00199CDF /* XXNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				C44188541C7D7BB200199CDF /* Test */,
 				C441883A1C7D659E00199CDF /* AppDelegate.h */,
 				C441883B1C7D659E00199CDF /* AppDelegate.m */,
 				C441883D1C7D659E00199CDF /* ViewController.h */,
 				C441883E1C7D659E00199CDF /* ViewController.m */,
-				C44188401C7D659E00199CDF /* Main.storyboard */,
-				C44188431C7D659E00199CDF /* Assets.xcassets */,
-				C44188451C7D659E00199CDF /* LaunchScreen.storyboard */,
-				C44188481C7D659E00199CDF /* Info.plist */,
 				C44188371C7D659E00199CDF /* Supporting Files */,
 			);
 			path = XXNavigation;
@@ -74,9 +77,24 @@
 		C44188371C7D659E00199CDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C44188401C7D659E00199CDF /* Main.storyboard */,
+				C44188431C7D659E00199CDF /* Assets.xcassets */,
+				C44188451C7D659E00199CDF /* LaunchScreen.storyboard */,
+				C44188481C7D659E00199CDF /* Info.plist */,
 				C44188381C7D659E00199CDF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C44188541C7D7BB200199CDF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C44188551C7D7C9300199CDF /* NormalController.h */,
+				C44188561C7D7C9300199CDF /* NormalController.m */,
+				C44188571C7D7C9300199CDF /* TableViewController.h */,
+				C44188581C7D7C9300199CDF /* TableViewController.m */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +169,8 @@
 			files = (
 				C441883F1C7D659E00199CDF /* ViewController.m in Sources */,
 				C441883C1C7D659E00199CDF /* AppDelegate.m in Sources */,
+				C44188591C7D7C9300199CDF /* NormalController.m in Sources */,
+				C441885A1C7D7C9300199CDF /* TableViewController.m in Sources */,
 				C44188391C7D659E00199CDF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pogolive.XXNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pogolive.XXNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";

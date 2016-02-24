@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    [nav setViewControllers:@[vc]];
+    //config NavigationBar
+      [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor yellowColor],NSForegroundColorAttributeName,nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor yellowColor]];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
